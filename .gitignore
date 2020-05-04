@@ -9,11 +9,9 @@ node_modules
 .settings/
 
 # misc
-/public
 /db/*
 /.env/*
 /lib/*
-/modules/*
 /config/sslcerts/*
 .DS_Store
 

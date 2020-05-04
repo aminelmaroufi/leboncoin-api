@@ -1,0 +1,10 @@
+//auth
+export const API_CALL_REQUEST = "API_CALL_REQUEST";
+export const API_CALL_FAILURE = "API_CALL_FAILURE";
+export const API_CALL_SUCCESS = "API_CALL_SUCCESS";
+export const SUCCESS_OPERATION = "SUCCESS_OPERATION";
+export const USER_NOT_CONNECTED = "USER_NOT_CONNECTED";
+
+//lists
+export const GET_BOOKINGS = "GET_BOOKINGS";
+export const SET_BOOKINGS = "SET_BOOKINGS";

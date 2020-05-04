@@ -1,0 +1,16 @@
+.loader-container {
+  background-color: #f2f2f2;
+  opacity: 0.9;
+  z-index: 999;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.search-btn {
+  background: #6b7692 !important;
+  color: rgb(230, 227, 239) !important;
+  top: -35px;
+}
