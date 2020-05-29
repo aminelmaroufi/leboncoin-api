@@ -1,8 +1,15 @@
+// This config file contains Mocha's defaults.
+// As you can see, comments are allowed.
+// This same configuration could be provided in the `mocha` property of your
+// project's `package.json`.
 {
-  "ui": "tdd",
   "diff": true,
-  "reporter": "spec",
-  "enableTimeouts": false,
+  "extension": ["js"],
   "package": "./package.json",
-  "timeout": 15000
+  "reporter": "spec",
+  "slow": 75,
+  "timeout": 2000,
+  "ui": "bdd",
+  "watch-files": ["modules/**/tests/**/*.js"],
+  "watch-ignore": ["lib/vendor", "vendor"]
 }

@@ -22,13 +22,13 @@ exports.search = async (req, res) => {
       .setDepartment(dep)
       // .setLocation([{ zipcode: '78100' }, { zipcode: '78000' }])
       .addSearchExtra('price', { min: parseInt(price_min), max: parseInt(price_max) }) // will add a range of price
-      .addSearchExtra('furnished', JSON.parse(furnished) ? ['0', 'meublé'] : ['1', 'Non meublé']); // will add enums for Meublé and Non meublé
+      .addSearchExtra('furnished', ['1', 'Non meublé']); // will add enums for Meublé and Non meublé
 
     const data = await search.run();
-
     return res.json({
       ok: true,
       result: {
+        total: data.nbResult,
         bookings: data.results,
       },
     });
