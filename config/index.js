@@ -1,6 +1,6 @@
-/*
-eslint-disable no-console,import/no-extraneous-dependencies,import/no-dynamic-require,global-require
-*/
+// /*
+// eslint-disable no-console,import/no-extraneous-dependencies,import/no-dynamic-require,global-require
+// */
 
 /**
  * Module dependencies.

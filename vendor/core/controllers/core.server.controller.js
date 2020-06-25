@@ -1,6 +1,5 @@
 const { resolve } = require('path');
 
-// eslint-disable-next-line import/no-dynamic-require
 const config = require(resolve('config'));
 const { vendor } = config.files.server.modules;
 

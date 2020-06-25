@@ -1,6 +1,4 @@
-/*
-eslint-disable import/no-extraneous-dependencies
-*/
+
 const nunjucks = require('nunjucks');
 const path = require('path');
 const generatePassword = require('generate-password');

@@ -2,14 +2,11 @@ const { resolve } = require('path');
 const { model } = require('mongoose');
 const { promisify } = require('util');
 const debug = require('debug')('modules:users:bootstraps');
-// eslint-disable-next-line import/no-unresolved
 const { isExcluded } = require('utils');
 
 const Iam = require('../helpers/iam.server.helper');
 
-// eslint-disable-next-line import/no-dynamic-require
 const roles = require(resolve('config/lib/acl'));
-// eslint-disable-next-line import/no-dynamic-require
 const config = require(resolve('config'));
 
 async function seedIAMs() {

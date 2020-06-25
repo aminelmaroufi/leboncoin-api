@@ -1,6 +1,3 @@
-/*
-eslint-disable import/no-dynamic-require,import/no-unresolved,import/no-extraneous-dependencies
-*/
 
 /**
  * Module dependencies.

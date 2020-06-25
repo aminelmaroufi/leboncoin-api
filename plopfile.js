@@ -3,7 +3,6 @@
 const { spawn } = require('child_process');
 const { resolve } = require('path');
 const { platform } = require('os');
-// eslint-disable-next-line import/no-extraneous-dependencies
 const ora = require('ora');
 
 const npmCmd = platform().startsWith('win') ? 'npm.cmd' : 'npm';

@@ -56,7 +56,7 @@ module.exports = [
     name: 'guest',
     protected: true,
     title: 'Guest role',
-    description: "Role given for any unauthenticated user, or users who don't have any role.",
+    description: "Role given for any unauthenticated user, or users who don't have any role",
     iams: guest,
   },
   {

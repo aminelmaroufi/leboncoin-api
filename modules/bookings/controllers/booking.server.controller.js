@@ -1,9 +1,3 @@
-/* eslint linebreak-style: ["error", "unix"] */
-/* eslint-env node, mocha */
-/* eslint-disable import/no-dynamic-require */
-/* eslint-disable prefer-template */
-/* eslint-disable no-unused-expressions */
-
 /**
  * Module dependencies.
  */
@@ -11,7 +5,8 @@ const leboncoin = require('leboncoin-api');
 // eslint-disable-next-line
 
 exports.search = async (req, res) => {
-  const { dep, price_min, price_max, furnished } = req.query;
+  const { dep, price_min, price_max } = req.query;
+
   try {
     const search = new leboncoin.Search()
       .setPage(1)
@@ -21,7 +16,7 @@ exports.search = async (req, res) => {
       .setRegion('ile_de_france')
       .setDepartment(dep)
       // .setLocation([{ zipcode: '78100' }, { zipcode: '78000' }])
-      .addSearchExtra('price', { min: parseInt(price_min), max: parseInt(price_max) }) // will add a range of price
+      .addSearchExtra('price', { min: parseInt(price_min, 10), max: parseInt(price_max, 10) }) // will add a range of price
       .addSearchExtra('furnished', ['1', 'Non meublé']); // will add enums for Meublé and Non meublé
 
     const data = await search.run();

@@ -1,5 +1,5 @@
 **/node_modules/*
-!.eslintrc.js
+!.eslintrc.json
 *.test.tmp.js
 coverage/
 assets/

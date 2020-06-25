@@ -1,0 +1,44 @@
+// module.exports = {
+//   extends: ['airbnb-base'],
+//   globals: {},
+//   rules: {
+//     indent: 2,
+//     'no-console': ['error', { allow: ['warn', 'error', 'info'] }],
+//     'linebreak-style': ['error', 'unix'],
+//     // quotes: [2, 'single'],
+//     camelcase: 'off',
+//     'max-len': [
+//       'error',
+//       {
+//         code: 100,
+//         ignoreComments: true,
+//         ignoreStrings: true,
+//         ignoreTemplateLiterals: true,
+//       },
+//     ],
+//   },
+// };
+
+{
+  "extends": [
+    "eslint:recommended", // Good standard base of rules to use by default
+    // The prettier shareable configs need to come last
+    "prettier"
+  ],
+  "rules": {
+    // My preferred rules
+    "no-console": ["error", { "allow": ["warn", "error", "info"] }],
+    "no-var": "error", // preference for let and const only
+    "prefer-const": "error",
+    "eqeqeq": "warn" // warn to use === instead of ==
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018, // Use the latest version ESLint understands
+    "sourceType": "module" // We're using import/export, etc
+  },
+  "env": {
+    "es6": true, // Since we're using ES6+ features like Async/Await
+    "browser": true,
+    "node": true
+  }
+}

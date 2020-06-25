@@ -4,7 +4,6 @@ const express = require('express');
 
 const Iam = require('../helpers/iam.server.helper');
 
-// eslint-disable-next-line import/no-dynamic-require
 const config = require(resolve('config'));
 
 /**

@@ -1,6 +1,5 @@
 /* eslint linebreak-style: ["error", "unix"] */
 /* eslint-env node, mocha */
-/* eslint-disable import/no-dynamic-require */
 /* eslint-disable prefer-template */
 /* eslint-disable no-unused-expressions */
 /* eslint-disable no-shadow */

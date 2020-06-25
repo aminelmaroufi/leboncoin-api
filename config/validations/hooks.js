@@ -1,6 +1,4 @@
-/*
-eslint-disable import/no-dynamic-require,global-require
-*/
+
 
 const path = require('path');
 

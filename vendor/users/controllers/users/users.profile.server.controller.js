@@ -1,4 +1,3 @@
-/* eslint-disable import/no-dynamic-require */
 
 /**
  * Module dependencies.
@@ -126,7 +125,7 @@ exports.me = async function me(req, res) {
 
     if ($expand.includes('iams')) {
       result.iams = iams.map((iam) => {
-        const { resource, permission, ...toSend } = iam;
+        const { ...toSend } = iam;
         return toSend;
       });
     }
