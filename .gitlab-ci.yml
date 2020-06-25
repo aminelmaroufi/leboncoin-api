@@ -6,12 +6,12 @@ services:
 variables:
   NODE_ENV: 'test'
   MONGODB_URI: 'mongodb://mongo/app-test'
-  STAGING_URL: '$STAGING_URL'
-  STAGING_DEPLOY_SERVER: '$STAGING_DEPLOY_SERVER'
-  STAGING_SSH_PRIVATE_KEY: '$STAGING_SSH_PRIVATE_KEY'
-  PRODUCTION_URL: '$PRODUCTION_URL'
-  PRODUCTION_DEPLOY_SERVER: '$PRODUCTION_DEPLOY_SERVER'
-  PRODUCTION_SSH_PRIVATE_KEY: '$PRODUCTION_SSH_PRIVATE_KEY'
+  # STAGING_URL: '$STAGING_URL'
+  # STAGING_DEPLOY_SERVER: '$STAGING_DEPLOY_SERVER'
+  # STAGING_SSH_PRIVATE_KEY: '$STAGING_SSH_PRIVATE_KEY'
+  # PRODUCTION_URL: '$PRODUCTION_URL'
+  # PRODUCTION_DEPLOY_SERVER: '$PRODUCTION_DEPLOY_SERVER'
+  # PRODUCTION_SSH_PRIVATE_KEY: '$PRODUCTION_SSH_PRIVATE_KEY'
 
 cache:
   paths:
@@ -25,11 +25,11 @@ Run tests:
   stage: test
   script:
     - npm install --unsafe-perm
+    - npm start
     - npm test
   only:
     - master
     - develop
-    - merge_requests
 # Deploy on staging:
 #   stage: deploy
 #   before_script:
