@@ -5,6 +5,7 @@
 /* eslint-disable no-shadow */
 
 const chai = require('chai');
+
 const requestSupertest = require('supertest');
 const target = require('../../../test/init/target');
 const data = require('../../../test/init/data.init');
